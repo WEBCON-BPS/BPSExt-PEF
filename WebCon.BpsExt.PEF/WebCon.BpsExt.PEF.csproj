@@ -1,0 +1,107 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Label="MainConfig">
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ed1fc5d5-9574-433c-97a0-4568bbadb881}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebCon.BpsExt.PEF</RootNamespace>
+    <AssemblyName>WebCon.BpsExt.PEF</AssemblyName>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>temporary_key.snk</AssemblyOriginatorKeyFile>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableDefaultItems>false</EnableDefaultItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CustomActions\ApiHelperBase\ApiHelperBase.cs" />
+    <Compile Include="CustomActions\ConfirmRead\ConfirmApiHelper.cs" />
+    <Compile Include="CustomActions\ConfirmRead\ConfirmRead.cs" />
+    <Compile Include="CustomActions\ConfirmRead\ConfirmReadConfig.cs" />
+    <Compile Include="CustomActions\CreateCreditNoteXml\CreateCreditNoteXml.cs" />
+    <Compile Include="CustomActions\CreateCreditNoteXml\CreateCreditNoteXmlConfig.cs" />
+    <Compile Include="CustomActions\CreateXml\CreateXml.cs" />
+    <Compile Include="CustomActions\CreateXml\CreateXmlConfig.cs" />
+    <Compile Include="CustomActions\DocumentVisualizer\DocumentVisualizer.cs" />
+    <Compile Include="CustomActions\DocumentVisualizer\DocumentVisualizerConfig.cs" />
+    <Compile Include="CustomActions\DownloadDocument\DownloadApiHelper.cs" />
+    <Compile Include="CustomActions\DownloadDocument\DownloadDocument.cs" />
+    <Compile Include="CustomActions\DownloadDocument\DownloadDocumentConfig.cs" />
+    <Compile Include="CustomActions\GetEventsFromQueue\ApiHelper\QueueApiHelper.cs" />
+    <Compile Include="CustomActions\GetEventsFromQueue\GetEventsFromQueue.cs" />
+    <Compile Include="CustomActions\GetEventsFromQueue\GetEventsFromQueueConfig.cs" />
+    <Compile Include="CustomActions\GetEventsFromQueue\MessageHelpers\MessageHelper.cs" />
+    <Compile Include="CustomActions\Models\Attachments.cs" />
+    <Compile Include="CustomActions\Models\AttachmentsCategory.cs" />
+    <Compile Include="CustomActions\Models\DocumentReceivedMessage.cs" />
+    <Compile Include="CustomActions\Models\DocumentSentFromOtherSourceMessage.cs" />
+    <Compile Include="CustomActions\Models\Enums.cs" />
+    <Compile Include="CustomActions\Models\ReceivedOrSendDocumentStatusChangedMessage.cs" />
+    <Compile Include="CustomActions\Models\SentDocumentErrorMessage.cs" />
+    <Compile Include="CustomActions\Models\StartNewDocumentMessage.cs" />
+    <Compile Include="CustomActions\ReadCreditNoteXml\ReadCreditNoteXml.cs" />
+    <Compile Include="CustomActions\ReadCreditNoteXml\ReadCreditNoteXmlConfig.cs" />
+    <Compile Include="CustomActions\ReadXml\ReadXml.cs" />
+    <Compile Include="CustomActions\ReadXml\ReadXmlConfig.cs" />
+    <Compile Include="CustomActions\SentDocument\SentDocument.cs" />
+    <Compile Include="CustomActions\SentDocument\SentDocumentApiHelper.cs" />
+    <Compile Include="CustomActions\SentDocument\SentDocumentConfig.cs" />
+    <Compile Include="CustomActions\Utils\JsonUtil.cs" />
+    <Compile Include="CustomActions\Utils\XmlExtensions.cs" />
+    <Compile Include="CustomActions\XmlHelper\CreditNote\CreditNote.cs" />
+    <Compile Include="CustomActions\XmlHelper\CreditNote\CreditNoteExtension.cs" />
+    <Compile Include="CustomActions\XmlHelper\CreditNote\CreditNoteTypeGet.cs" />
+    <Compile Include="CustomActions\XmlHelper\CreditNote\CreditNoteTypeSet.cs" />
+    <Compile Include="CustomActions\XmlHelper\CreditNote\CreditNoteUBLExtensions.cs" />
+    <Compile Include="CustomActions\XmlHelper\CreditNote\CreditNoteUBLExtensionsExtension.cs" />
+    <Compile Include="CustomActions\XmlHelper\CreditNote\CreditNoteUBLExtensionsTypeGet.cs" />
+    <Compile Include="CustomActions\XmlHelper\CreditNote\CreditNoteUBLExtensionsTypeSet.cs" />
+    <Compile Include="CustomActions\XmlHelper\Entities\IXmlCollectionMapping.cs" />
+    <Compile Include="CustomActions\XmlHelper\Entities\IXmlColumnMapping.cs" />
+    <Compile Include="CustomActions\XmlHelper\Entities\IXmlMapping.cs" />
+    <Compile Include="CustomActions\XmlHelper\Entities\XmlCollectionMapping.cs" />
+    <Compile Include="CustomActions\XmlHelper\Entities\XmlColumnMapping.cs" />
+    <Compile Include="CustomActions\XmlHelper\Entities\XmlFieldMapping.cs" />
+    <Compile Include="CustomActions\XmlHelper\ICommonType.cs" />
+    <Compile Include="CustomActions\XmlHelper\InvoiceType\InvoiceTypeGet.cs" />
+    <Compile Include="CustomActions\XmlHelper\InvoiceType\InvoiceTypeSet.cs" />
+    <Compile Include="CustomActions\XmlHelper\xsd_output.cs" />
+    <Compile Include="CustomActions\XmlHelper\xsd_output_ext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WebCon.BpsExt.PEF.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="temporary_key.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+    <PackageReference Include="WEBCON.BPS.2022.SDK.Libraries" Version="22.1.1.53" />
+  </ItemGroup>
+</Project>

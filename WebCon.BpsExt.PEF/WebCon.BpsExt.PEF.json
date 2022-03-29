@@ -1,0 +1,74 @@
+[
+  {
+    "Guid": "649bb32c-8882-44b7-9404-e721bc306a1f",
+    "Name": "ReadCreditNoteXml",
+    "Description": "",
+    "Assembly": "WebCon.BpsExt.PEF",
+    "Class": "WebCon.BpsExt.PEF.CustomActions.ReadCreditNoteXml.ReadCreditNoteXml",
+    "Type": "CustomAction"
+  },
+  {
+    "Guid": "4ca56cdf-86b0-442c-b4cf-2a4e6a39ae16",
+    "Name": "CreateCreditNoteXml",
+    "Description": "",
+    "Assembly": "WebCon.BpsExt.PEF",
+    "Class": "WebCon.BpsExt.PEF.CustomActions.CreateCreditNoteXml.CreateCreditNoteXml",
+    "Type": "CustomAction"
+  },
+  {
+    "Guid": "ce4c4a81-3c76-42d0-9f42-4923ab0b2a1e",
+    "Name": "DocumentVisualizer",
+    "Description": "",
+    "Assembly": "WebCon.BpsExt.PEF",
+    "Class": "WebCon.BpsExt.PEF.CustomActions.DocumentVisualizer.DocumentVisualizer",
+    "Type": "CustomAction"
+  },
+  {
+    "Guid": "eb0ccf38-ba6b-4d40-b681-fbb86db1e60e",
+    "Name": "CreateXml",
+    "Description": "",
+    "Assembly": "WebCon.BpsExt.PEF",
+    "Class": "WebCon.BpsExt.PEF.CustomActions.CreateXml.CreateXml",
+    "Type": "CustomAction"
+  },
+  {
+    "Guid": "34140a7b-ffa4-49ca-a944-fd2a9d7fbe46",
+    "Name": "ReadXml",
+    "Description": "",
+    "Assembly": "WebCon.BpsExt.PEF",
+    "Class": "WebCon.BpsExt.PEF.CustomActions.ReadXml.ReadXml",
+    "Type": "CustomAction"
+  },
+  {
+    "Guid": "6e1a852d-dbcf-4cec-9d35-2efff416fe59",
+    "Name": "SentDocument",
+    "Description": "",
+    "Assembly": "WebCon.BpsExt.PEF",
+    "Class": "WebCon.BpsExt.PEF.CustomActions.SentDocument.SentDocument",
+    "Type": "CustomAction"
+  },
+  {
+    "Guid": "a4184742-9636-4c26-8d76-242fad24a37b",
+    "Name": "ConfirmRead",
+    "Description": "",
+    "Assembly": "WebCon.BpsExt.PEF",
+    "Class": "WebCon.BpsExt.PEF.CustomActions.ConfirmRead.ConfirmRead",
+    "Type": "CustomAction"
+  },
+  {
+    "Guid": "c61f717d-1eae-4d21-bc72-da39d2bcdfbf",
+    "Name": "DownloadDocument",
+    "Description": "",
+    "Assembly": "WebCon.BpsExt.PEF",
+    "Class": "WebCon.BpsExt.PEF.CustomActions.DownloadDocument.DownloadDocument",
+    "Type": "CustomAction"
+  },
+  {
+    "Guid": "e5ed1164-ad77-460b-9a1e-7ba20e448803",
+    "Name": "GetEventsFromQueue",
+    "Description": "",
+    "Assembly": "WebCon.BpsExt.PEF",
+    "Class": "WebCon.BpsExt.PEF.CustomActions.GetEventsFromQueue.GetEventsFromQueue",
+    "Type": "CustomAction"
+  }
+]
